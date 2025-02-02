@@ -6,13 +6,13 @@ document.getElementById('signup-form').addEventListener('submit', function(event
   if (email) {
       const data = { email: email };
 
-      const PROXY = 'https://cors-anywhere.herokuapp.com/';
-      // const URL = 'https://script.google.com/macros/s/AKfycbwb0C7EUCles7MDxMd-bDbAw79xxrsBH5yBnONLNcsi3e4eEwlQWUqiS8PePJtUeOac/exec';
+      // const PROXY = 'https://cors-anywhere.herokuapp.com/';
       const URL = 'https://script.google.com/macros/s/AKfycbzn9K8x-UsIoCgHe-gExuWnPz5yLiRmnZ0QNouVGMx4ssP2odOe_otgO6iOaQghv1fm/exec';
 
 
       // Send to Google Sheets via Google Apps Script endpoint
-      fetch(PROXY + URL, {
+      // fetch(PROXY + URL, {
+      fetch(URL, {
           // redirect: 'follow',
           method: 'POST',
           // mode: 'cors',
