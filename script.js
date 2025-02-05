@@ -5,22 +5,17 @@ document.getElementById('signup-form').addEventListener('submit', function(event
 
   if (email) {
       const data = { email: email };
+      const DOMAIN = 'genuimessays.com'
 
-      // const PROXY = 'https://cors-anywhere.herokuapp.com/';
-      const URL = 'https://script.google.com/macros/s/AKfycbzn9K8x-UsIoCgHe-gExuWnPz5yLiRmnZ0QNouVGMx4ssP2odOe_otgO6iOaQghv1fm/exec';
-
+      const URL = `https://${DOMAIN}/api/join`;
+      // const URL = `http://localhost:3000`;
 
       // Send to Google Sheets via Google Apps Script endpoint
-      // fetch(PROXY + URL, {
       fetch(URL, {
-          // redirect: 'follow',
           method: 'POST',
-          // mode: 'cors',
           body: JSON.stringify(data),
           headers: {
               'Content-Type': 'application/json',
-              // 'Referrer-Policy': 'no-referrer'  // Explicitly set referrer policy
-
           }
       })
       .then(response => {
