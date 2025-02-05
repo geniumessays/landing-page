@@ -5,7 +5,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
 
   if (email) {
       const data = { email: email };
-      const DOMAIN = 'genuimessays.com'
+      const DOMAIN = 'geniumessays.com'
 
       const URL = `https://${DOMAIN}/api/join`;
       // const URL = `http://localhost:3000`;
