@@ -145,6 +145,17 @@ footer p {
   font-size: 0.8rem;
 }
 
+.email-link {
+  text-decoration: none;
+  color: white; /* Set the color you prefer */
+  /* font-size: 16px; Adjust the font size */
+}
+
+.email-link i {
+  margin-right: 8px; /* Space between the icon and the email address */
+}
+
+
 /* Responsive design */
 @media (max-width: 600px) {
   h1 {
@@ -165,3 +176,5 @@ footer p {
     width: 100%; /* Full width on mobile */
   }
 }
+
+
