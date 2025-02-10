@@ -122,6 +122,10 @@ footer {
   font-size: 0.8rem
 }
 
+.left-footer p a {
+  color: white;
+}
+
 /* Centered content */
 .center-footer {
   padding-bottom: 10px;
