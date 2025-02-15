@@ -93,6 +93,10 @@ button:hover {
   background-color: #444444;
 }
 
+#playground-button {
+  margin-top: 10px
+}
+
 /* Confirmation message styles */
 #confirmation-message {
   margin-top: 10px;
@@ -172,7 +176,7 @@ footer p {
 
   .form-wrapper {
     flex-direction: column; /* Stacks elements */
-    gap: 10px;
+    gap: 15px;
     width: 100%;
   }
 
